@@ -70,7 +70,7 @@ class WordpressPanelCustom {
     	
     	add_action('admin_init', array($this, 'hideAdminBarTools'));
     	
-    	add_action('init', array($this, 'updateLabelsPostTypeObject'));
+    	add_action('init', array($this, 'updateLabelsPostTypeObject'), 50);
     	
     	add_action('admin_menu', array($this, 'updateLabelsPostType'));
     	 
